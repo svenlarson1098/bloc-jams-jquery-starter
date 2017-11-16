@@ -43,10 +43,5 @@
     player.setVolume(event.target.value);
   });
 
-  setVolume( () => {
-    if (player.playState !== 'playing') { return; }
-    $('#volume-control').prop('volume', (value/100);
-  },
-//div id="volume-control"
-//<input type="range" class="seek-bar" value="80">
 }
+  
