@@ -4,7 +4,7 @@ class Helper {
 
     playPauseAndUpdate (song = this.currentlyPlaying) {
       if (this.currentlyPlaying !== song)
-      $('#total-time .duration').val(duration);
+      $('#time-control .total-time').text(totalTime);
   }
 }
 const helper = new Helper();
