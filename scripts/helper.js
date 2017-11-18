@@ -3,7 +3,7 @@ class Helper {
     player.playPause(song);
 
     playPauseAndUpdate (song = this.currentlyPlaying) {
-      //if (this.currentlyPlaying !== song)
+      if (this.currentlyPlaying !== song)
       $('#total-time .duration').val(duration);
   }
 }
