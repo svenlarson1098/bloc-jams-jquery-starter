@@ -1,13 +1,12 @@
 class Helper {
-  playPauseAndUpdate(song) {
-    player.playPause(song);
-
-    playPauseAndUpdate (song = this.currentlyPlaying) {
-      if (this.currentlyPlaying !== song)
-      $('#time-control .total-time').text(totalTime);
+     playPauseAndUpdate (song = this.currentlyPlaying) {
+      if (this.currentlyPlaying !== song);
+      $('#time-control .total-time').text(song.duration);
+  }
+  helper.playPauseAndUpdate(song);
   }
 }
-const helper = new Helper();
+//const helper = new Helper();
 
 
 //Add a method to the Helper class called `playPauseAndUpdate` that takes one parameter, `song`.

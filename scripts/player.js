@@ -16,7 +16,7 @@ class Player {
 
   //prettyTime() {
     //return this.timeInSeconds.prettyTime();
-  }
+  //}
 
   playPause (song = this.currentlyPlaying) {
     if (this.currentlyPlaying !== song) {
