@@ -11,8 +11,6 @@ class Player {
   }
 
   getTime() {
-    console.log(this.soundObject)
-    console.log(this.soundObject.getTime());
     return this.soundObject.getTime();
   }
 
@@ -39,7 +37,6 @@ class Player {
     if (this.playState === 'paused' || this.playState === 'stopped') {
       this.soundObject.setVolume( this.volume );
       this.soundObject.play();
-console.log("playing")
       this.playState = 'playing';
       this.currentlyPlaying.element.removeClass('paused').addClass('playing');
     } else {
