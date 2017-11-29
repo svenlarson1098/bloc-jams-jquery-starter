@@ -14,13 +14,16 @@ class Player {
     return this.soundObject.getTime();
   }
 
-  //prettyTime() {
-    //this.timeInSeconds = Math.floor('.current-time' / 60);
-    //this.timeInSeconds = Math.floor('.total-time' / 60);
-    //return += "" + mins + ":" + (secs < 10 ? "0" : "");
-    //return += "" + secs;
-    //return this.timeInSeconds.prettyTime();
-  //}
+  prettyTime(time) {
+    //let totalSeconds = currentTime;
+    var minutes = Math.floor(currentTime / 60);
+    var seconds = currentTime - minutes * 60;
+    var result = (minutes < 10 ? "0" + "")
+      result += "-" + minutes + ":" + (seconds < 10 ? "0" : "");
+      result += "" + seconds;
+      return time;
+  }
+
 
   playPause (song = this.currentlyPlaying) {
     if (this.currentlyPlaying !== song) {
