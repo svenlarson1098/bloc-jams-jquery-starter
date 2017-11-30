@@ -16,12 +16,12 @@ class Player {
 
   prettyTime(time) {
     //let totalSeconds = currentTime;
-    var minutes = Math.floor(currentTime / 60);
-    var seconds = currentTime - minutes * 60;
-    var result = (minutes < 10 ? "0" + "")
-      result += "-" + minutes + ":" + (seconds < 10 ? "0" : "");
+    var minutes = Math.floor(time / 60);
+    var seconds = Math.floor(time - minutes * 60);
+    var result = (minutes < 10 ? "0" : "")
+      result +=   minutes + ":" + (seconds < 10 ? "0" : "");
       result += "" + seconds;
-      return time;
+      return result;
   }
 
 
