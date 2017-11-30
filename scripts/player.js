@@ -18,7 +18,7 @@ class Player {
     //let totalSeconds = currentTime;
     var minutes = Math.floor(time / 60);
     var seconds = Math.floor(time - minutes * 60);
-    var result = (minutes < 10 ? "0" : "")
+    var result = (minutes < 10 ? "" : "") //add a zero to 10 ? "0" to create 10 minutes
       result +=   minutes + ":" + (seconds < 10 ? "0" : "");
       result += "" + seconds;
       return result;
